@@ -1,41 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.game {
+    max-width: 500px;
+    margin: 1rem auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.help {
+    color: #666;
+    margin: 10px;
+    text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body {
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.left {
+    text-align: center;
+    width: 50%;
+    border: thin solid #ddd;
 }
 
-.card {
-  padding: 2em;
+.right {
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    border: thin solid #ddd;
 }
 
-.read-the-docs {
-  color: #888;
+.star {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.star:after {
+    content: "\2605";
+    font-size: 45px;
+}
+
+.number {
+    background-color: #eee;
+    border: thin solid #ddd;
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.number:focus,
+.number:active {
+    outline: none;
+    border: thin solid #ddd;
+}
+
+.timer {
+    color: #666;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.game-done .message {
+    font-size: 250%;
+    font-weight: bold;
+    margin: 15px;
 }

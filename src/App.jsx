@@ -1,32 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React from 'react'
+import "./App.css"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='game'>
+      <div className="help">
+        Pick 1 or more numbers that sum to the numbers of stars
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="body">
+      <div className="left">
+          <div className="star" />
+          <div className="star" />
+          <div className="star" />
+          <div className="star" />
+          <div className="star" />
+          <div className="star" />
+          <div className="star" />
+          <div className="star" />
+          <div className="star" />
+        </div>
+        <div className="right">
+          <button className="number">1</button>
+          <button className="number">2</button>
+          <button className="number">3</button>
+          <button className="number">4</button>
+          <button className="number">5</button>
+          <button className="number">6</button>
+          <button className="number">7</button>
+          <button className="number">8</button>
+          <button className="number">9</button>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <div className="timer">Time Remaining: 10</div>
     </div>
   )
 }
